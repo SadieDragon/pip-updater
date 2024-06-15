@@ -10,4 +10,4 @@ run(['pip', 'install', '-U', 'pip'])
 
 # pip install -U `pip list --outdated | awk 'NR>2 {print $1}'`
 # Upgrade all outdated packages
-run(['pip', 'install', '-U', "`pip list --outdated | awk 'NR>2 {print $1}'`"])
+run(['pip', 'install', "-U `pip list --outdated | awk 'NR>2 {print $1}'`"])
