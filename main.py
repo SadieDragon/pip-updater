@@ -5,3 +5,5 @@ from subprocess import run
 print('On top of pip, the following packages were updated:\n\n')
 print(run(['pip', 'list', '-o']))
 
+# Maybe this works? (to) Upgrade pip first.
+run(['pip', 'install', '-U', 'pip'])
