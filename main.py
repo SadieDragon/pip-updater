@@ -17,6 +17,7 @@ for index, package in [*enumerate(outdated_packages)]:
     # Everything else does.
     if index != 0:
         # Remove the excess whitespace
+        # https://stackoverflow.com/a/28607213
         pkg_vs_type = " ".join(split("\s+", package, flags=UNICODE))
         # And then split it (PEP8, woo!)
         pkg_vs_type = pkg_vs_type.split(' ')
